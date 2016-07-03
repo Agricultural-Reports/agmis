@@ -1,4 +1,0 @@
-Hello
-Roy
-Lilian
-ADash
