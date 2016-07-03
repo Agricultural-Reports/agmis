@@ -17,6 +17,8 @@
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
 
+    <link href="css/style.css" rel="stylesheet">
+
     <!-- Custom Fonts -->
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
@@ -27,22 +29,6 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <style>
-        .jumbotron {
-            position: relative;
-            font-family:"Open Sans Light";
-            background: url("img/d.jpg") no-repeat center center;
-            width:100%;
-            height: 65%;
-            background-size: 100% 100%;
-        }
-        .shadow {
-            border-radius:0px;
-            -webkit-box-shadow: 0 0 30px black;
-            -moz-box-shadow: 0 0 30px black;
-            box-shadow: 0 0 30px black;
-        }
-    </style>
 </head>
 
 <body>
@@ -149,13 +135,15 @@
 
         <div class="container">
 
-        <p>Be the First to know! Get an update when a new report arrives</p>
+        <p>Get an update when a new report arrives</p>
         <p>
             <div class="input-group">
             <input type="text" class="form-control" placeholder="Enter your Email Address" arialdescribedby="basic-addon2" style="border-radius:0px;">
             <span class="input-group-addon" id="basic-addon2" style="border-radius:0px; background:#FFB401;">SUBSCRIBE</span>
         </div>
         </p>
+
+            <p style="font-size:15px; text-decoration: underline;"><a href="#">Download Previous Reports</a></p>
 
         </div>
 
@@ -179,12 +167,100 @@
             </div>
         </div>
     </div>
+
+
+
 </div>
+
+
+<br><br>
+<!--Well-->
+<div class="well" style="border-radius:0px; border:1px solid #fff; background:#fff;">
+
+    <div class="container">
+<div class="col-md-7" style="font-family:'Open Sans';">
+    <h2>Make accurate statistical analysis</h2>
+    <p style="font-size:20px;">Get the best data from the only true sources that you trust</p>
+</div>
+
+        <img src="img/imac.png" class="img-responsive">
+
+
+
+    </div>
+
+
+
+    <br><br>
+    <!--Well-->
+    <div class="well" style="border-radius:0px; border:1px solid #fff; background:#fff;">
+
+        <div class="container">
+            <div class="col-md-7" style="font-family:'Open Sans';">
+                <h2>We are Mobile Friendly</h2>
+                <p style="font-size:20px;">Get the best data from the only true sources that you trust</p>
+            </div>
+
+            <img src="img/s.jpg" class="img-responsive">
+
+
+
+        </div>
+
+
+
+<style>
+        .make-border{
+            border:1px solid gray;
+        }
+</style>
+
+        <div class="container" style="font-family:'Open Sans';">
+
+            <center>
+                <h1 class="page-header" style="font-family:'Open Sans Light';">Our data creates solutions for different industries</h1>
+            </center>
+
+            <div class="panel panel-default" style="border-radius:0px;">
+            <div class="panel-body">
+
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 make-border">Meow</div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 make-border">Meow</div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 make-border">Meow</div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 make-border">Meow</div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 make-border">Meow</div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 make-border">Meow</div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 make-border">Meow</div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 make-border">Meow</div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 make-border">Meow</div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 make-border">Meow</div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 make-border">Meow</div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 make-border">Meow</div>
+                </div>
+
+
+                </div>
+            </div>
+
+    </div>
+</div>
+    </div>
+
+
+
+
+
+
+
+
+
 
 
 <!--Footer-->
 
-<section class="contact" style="background:#373E46;min-height:300px;color:#fff; font-family:georgia;">
+<section class="contact">
     <hr>
     <div class="container">
         <div class="col-md-3">
@@ -237,19 +313,7 @@
                  data-show-posts="false"> Facebook Page Loading...</div>
 
         </div>
-
-
-
-        <style>
-            #social-icons
-            {
-                font-size:40px;
-            }
-            #social-icons #content
-            {
-                margin-top:20px;
-            }
-        </style>
+        
 
         <div class="col-md-4 text-center center-block" id="social-icons">
             <div id="content">
@@ -263,6 +327,7 @@
                 <p style="font-size:20px;">&copy; AGMIS <?php echo date('Y'); ?></p>
             </div>
         </div>
+
 
 
 
