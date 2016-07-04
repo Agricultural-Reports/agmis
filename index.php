@@ -19,6 +19,9 @@
 
     <link href="css/style.css" rel="stylesheet">
 
+    <!--Map CSS-->
+    <link href="css/ammap.css" rel="stylesheet">
+
     <!-- Custom Fonts -->
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
@@ -29,6 +32,10 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!--Map Js-->
+    <script src="js/ammap.js" type="text/javascript"></script>
+    <script src="js/ugandaLow.js" type="text/javascript"></script>
+
     <style>
         #navbar-list li a{
             font-family:"Open Sans Semibold";
@@ -38,6 +45,29 @@
             font-family:"Open Sans Semibold";
         }
     </style>
+    <script>
+        var map = AmCharts.makeChart("mapdiv", {
+            type: "map",
+
+
+
+            balloon: {
+                color: "#000000"
+            },
+
+            dataProvider: {
+                map: "ugandaLow",
+                getAreasFromMap: true
+            },
+
+            areasSettings: {
+                autoZoom: true,
+                selectedColor: "#CC0000"
+            },
+
+            smallMap: {}
+        });
+    </script>
 </head>
 
 <body>
@@ -120,14 +150,26 @@
 
     <div class="panel panel-default shadow" style="font-family:'Open Sans';">
         <div class="panel-body">
-            <img src="img/p.jpg" class="col-md-5">
-            <div class="col-md-7" style="border:0px solid gray;">
+            <h3 class="page-header">Statistical Map of Uganda showing Product Prices</h3>
+            <!--Statistical Map of Uganda-->
+            <div id="mapdiv" class="col-md-5" style="border:0px solid gray; width: 500px; background-color:#EEEEEE; height: 400px;"></div>
+
+
+            <!--Notes-->
+
+            <div class="col-md-6" style="border:0px solid gray;">
+
                 <h3>Agricultural Information Reporting System</h3>
                 <p class="lead">Globally benchmark interdependent benefits vis-a-vis magnetic leadership skills. Authoritatively productivate future-proof products via empowered channels. Authoritatively syndicate plug-and-play functionalities.</p>
                 <p>Authoritatively pontificate enabled ideas and user friendly ROI. Objectively pontificate granular meta-services and market positioning ideas. Interactively engineer 2.0 manufactured products without sustainable quality vectors. Globally conceptualize parallel growth strategies with.</p>
                 <button class="btn btn-default" style="border-radius:0px;">READ MORE</button>
+
             </div>
+
         </div>
+
+
+
     </div>
 
 
