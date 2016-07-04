@@ -1,118 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Welcome to AGMIS!</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/modern-business.css" rel="stylesheet">
-
-    <link href="css/style.css" rel="stylesheet">
-
-    <!--Map CSS-->
-    <link href="css/ammap.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!--Map Js-->
-    <script src="js/ammap.js" type="text/javascript"></script>
-    <script src="js/ugandaLow.js" type="text/javascript"></script>
-
-    <style>
-        #navbar-list li a{
-            font-family:"Open Sans Semibold";
-        }
-        #navbar-list li button
-        {
-            font-family:"Open Sans Semibold";
-        }
-    </style>
-    <script>
-        var map = AmCharts.makeChart("mapdiv", {
-            type: "map",
-
-
-
-            balloon: {
-                color: "#000000"
-            },
-
-            dataProvider: {
-                map: "ugandaLow",
-                getAreasFromMap: true
-            },
-
-            areasSettings: {
-                autoZoom: true,
-                selectedColor: "#CC0000"
-            },
-
-            smallMap: {}
-        });
-    </script>
-</head>
-
-<body>
-
-<!-- Navigation -->
-<nav class="navbar navbar-inverse navbar-fixed-top shadow" role="navigation" style="height:70px; background: #373E46; border:0px;">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html" style="font-family:'Open Sans Semibold'; color:#fff; font-size:33px;">
-                Agmis
-            </a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right" id="navbar-list">
-            <li>
-                <a href="#">REPORTS</a>
-            </li>
-
-                <li>
-                    <a href="#">STATISTICS</a>
-                </li>
-                <li>
-                    <a href="#">SUMMARIES</a>
-                </li>
-                <li>
-                    <button type="submit" class="btn btn-default sharp-corners shadow" style="color:#fff;margin-top:10px; border:1px solid #373E46; background:#373E46;">CONTACT US</button>
-                </li>
-                <li>
-                    &nbsp&nbsp<button type="submit" class="btn btn-default sharp-corners shadow" style="color:#000;margin-top:10px; border:1px solid #373E46; background:#fff;">LOGIN</button>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-</nav>
-</header>
+<?php include 'inc/header.php'; ?>
 
 <br>
 <div class="jumbotron">
@@ -150,7 +36,11 @@
 
     <div class="panel panel-default shadow" style="font-family:'Open Sans';">
         <div class="panel-body">
-            <h3 class="page-header">Statistical Map of Uganda showing Product Prices</h3>
+            <h3 class="page-header">Statistical Map of Uganda showing Product Prices
+            <br>
+                <small>[--Click on your district--]</small>
+            </h3>
+
             <!--Statistical Map of Uganda-->
             <div id="mapdiv" class="col-md-5" style="border:0px solid gray; width: 500px; background-color:#EEEEEE; height: 400px;"></div>
 
@@ -183,8 +73,9 @@
 
     <div class="container">
 <div class="col-md-7" style="font-family:'Open Sans';">
-    <h2>Make accurate statistical analysis</h2>
-    <p style="font-size:20px;">Get the best data from the only true sources that you trust</p>
+    <h2>Make accurate statistical decisions</h2>
+    <p class="lead">Get the best data from the only true sources that you trust</p>
+    <p>Continually maintain exceptional methods of empowerment through sustainable imperatives. Uniquely pontificate empowered ideas for quality resources.</p>
 </div>
 
         <img src="img/p.jpg" class="img-responsive">
@@ -202,7 +93,8 @@
         <div class="container">
             <div class="col-md-7" style="font-family:'Open Sans';">
                 <h2>We are Mobile Friendly</h2>
-                <p style="font-size:20px;">Get the best data from the only true sources that you trust</p>
+                <p class="lead">Get the best data from the only true sources that you trust</p>
+                <p>Conveniently initiate B2B data without virtual metrics. Energistically initiate just in time growth strategies with interactive.</p>
             </div>
 
             <img src="img/s.jpg" class="img-responsive">
@@ -311,82 +203,4 @@
 
 
 
-
-<!--Footer-->
-
-<section class="contact">
-    <hr>
-    <div class="container">
-        <div class="col-md-3">
-            <ul style="list-style: none;">
-                <li>Write for Us</li>
-                <li>Books</li>
-                <li>Mentorship</li>
-                <li>Licensing</li>
-            </ul>
-        </div>
-
-        <div class="col-md-3">
-            <ul style="list-style: none;">
-                <li>Write for Us</li>
-                <li>Books</li>
-                <li>Mentorship</li>
-                <li>Licensing</li>
-            </ul>
-        </div>
-
-
-        <div class="col-md-2">
-            <ul style="list-style: none;">
-                <li>Write for Us</li>
-                <li>Books</li>
-                <li>Mentorship</li>
-                <li>Licensing</li>
-            </ul>
-        </div>
-
-
-
-        <script>(function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=727084914091193";
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));</script>
-
-
-        <div class="col-md-4">
-
-            <div class="fb-page"
-                 style="margin-left:0px;width:100%;";
-                 data-href="https://www.facebook.com/evolutionmediagroupug"
-                 data-width="380"
-                 data-hide-cover="false"
-                 data-show-facepile="true"
-                 data-show-posts="false"> Facebook Page Loading...</div>
-
-        </div>
-        
-
-        <div class="col-md-4 text-center center-block" id="social-icons">
-            <div id="content">
-                <i class="fa fa-facebook-square"></i>
-                <i class="fa fa-twitter-square"></i>
-                <i class="fa fa-linkedin-square"></i>
-                <i class="fa fa-google-plus-square"></i>
-                <i class="fa fa-globe"></i>
-
-                <hr color="#fff">
-                <p style="font-size:20px;">&copy; AGMIS <?php echo date('Y'); ?></p>
-            </div>
-        </div>
-
-
-
-
-
-
-
-<script src="js/jquery.js" type="text/javascript"></script>
-<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<?php include 'inc/footer.php'; ?>
