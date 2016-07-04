@@ -29,6 +29,15 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <style>
+        #navbar-list li a{
+            font-family:"Open Sans Semibold";
+        }
+        #navbar-list li button
+        {
+            font-family:"Open Sans Semibold";
+        }
+    </style>
 </head>
 
 <body>
@@ -44,75 +53,28 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">
-                AGMIS
+            <a class="navbar-brand" href="index.html" style="font-family:'Open Sans Semibold'; color:#fff; font-size:33px;">
+                Agmis
             </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right" id="navbar-list">
+            <li>
+                <a href="#">REPORTS</a>
+            </li>
+
                 <li>
-                    <a href="about.html">About</a>
+                    <a href="#">STATISTICS</a>
                 </li>
                 <li>
-                    <a href="services.html">Services</a>
+                    <a href="#">SUMMARIES</a>
                 </li>
                 <li>
-                    <a href="contact.html">Contact</a>
+                    <button type="submit" class="btn btn-default sharp-corners shadow" style="color:#fff;margin-top:10px; border:1px solid #373E46; background:#373E46;">CONTACT US</button>
                 </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="portfolio-1-col.html">1 Column Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="portfolio-2-col.html">2 Column Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="portfolio-3-col.html">3 Column Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="portfolio-4-col.html">4 Column Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="portfolio-item.html">Single Portfolio Item</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="blog-home-1.html">Blog Home 1</a>
-                        </li>
-                        <li>
-                            <a href="blog-home-2.html">Blog Home 2</a>
-                        </li>
-                        <li>
-                            <a href="blog-post.html">Blog Post</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="full-width.html">Full Width Page</a>
-                        </li>
-                        <li>
-                            <a href="sidebar.html">Sidebar Page</a>
-                        </li>
-                        <li>
-                            <a href="faq.html">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="404.html">404</a>
-                        </li>
-                        <li>
-                            <a href="pricing.html">Pricing Table</a>
-                        </li>
-                    </ul>
+                <li>
+                    &nbsp&nbsp<button type="submit" class="btn btn-default sharp-corners shadow" style="color:#000;margin-top:10px; border:1px solid #373E46; background:#fff;">LOGIN</button>
                 </li>
             </ul>
         </div>
@@ -126,24 +88,24 @@
 <div class="jumbotron">
 <div class="container">
 
-    <div class="col-md-5">
+    <div class="col-md-7">
 
 
-    <p style="font-size:50px;">GET AGRIC PRICES</p>
+    <p style="font-size:50px; color:#fff;">GET PRODUCT PRICES</p>
 
-    <div class="panel panel-default shadow" style="border-radius:0px;">
+    <div class="panel panel-default shadow" style="border-radius:0px; width:500px; background:#373E46; border:1px solid #373E46;">
 
         <div class="container">
 
-        <p>Get an update when a new report arrives</p>
+        <p style="color:#fff;">Get an update when a new report arrives</p>
         <p>
             <div class="input-group">
             <input type="text" class="form-control" placeholder="Enter your Email Address" arialdescribedby="basic-addon2" style="border-radius:0px;">
-            <span class="input-group-addon" id="basic-addon2" style="border-radius:0px; background:#FFB401;">SUBSCRIBE</span>
+            <span class="input-group-addon" id="basic-addon2" style="border-radius:0px; cursor:pointer; font-weight:bold; background:#FFB401;">SUBSCRIBE</span>
         </div>
         </p>
 
-            <p style="font-size:15px; text-decoration: underline;"><a href="#">Download Previous Reports</a></p>
+            <p style="font-size:15px; text-decoration: underline;"><a href="#" style="color:#fff;">Download Previous Reports</a></p>
 
         </div>
 
@@ -213,34 +175,97 @@
         .make-border{
             border:1px solid gray;
         }
+    .sharp-corners {
+        border-radius:0px;
+    }
 </style>
 
         <div class="container" style="font-family:'Open Sans';">
 
             <center>
-                <h1 class="page-header" style="font-family:'Open Sans Light';">Our data creates solutions for different industries</h1>
+                <h1 class="page-header" style="font-family: 'Open Sans Light'; font-size:40px;">Our data creates solutions for different industries</h1>
             </center>
 
-            <div class="panel panel-default" style="border-radius:0px;">
+            <style>
+            .make-border-two {
+                border:1px solid #DDDDDD;
+            }
+
+                #table-x tr td {
+                    text-align:center;
+                }
+
+            </style>
+
+
+
+            <div class="panel panel-default" style="border-radius:0px; border:0px solid #fff;">
             <div class="panel-body">
 
+                <table class="table make-border-two" id="table-x">
+                    <tr class="make-border-two">
+                        <td class="make-border-two">
+                            <i class="fa fa-android fa-5x"></i>
+                            <p>Android</p>
+                        </td>
+                        <td class="make-border-two">
+                            <i class="fa fa-apple fa-5x"></i>
+                            <p>Apple</p>
+                        </td>
+                        <td class="make-border-two">
+                            <i class="fa fa-windows fa-5x"></i>
+                            <p>Windows</p>
+                        </td>
+                        <td class="make-border-two">
+                            <i class="fa fa-linux fa-5x"></i>
+                            <p>Linux</p>
+                        </td>
+                    </tr>
 
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 make-border">Meow</div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 make-border">Meow</div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 make-border">Meow</div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 make-border">Meow</div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 make-border">Meow</div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 make-border">Meow</div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 make-border">Meow</div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 make-border">Meow</div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 make-border">Meow</div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 make-border">Meow</div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 make-border">Meow</div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 make-border">Meow</div>
-                </div>
+                    <tr>
+                        <td class="make-border-two">
+                            <i class="fa fa-medium fa-5x"></i>
+                            <p>Medium</p>
+                        </td>
 
+                        <td class="make-border-two">
+<i class="fa fa-facebook-official fa-5x"></i>
+                            <p>Facebook</p>
+                        </td>
 
+                        <td class="make-border-two">
+                            <i class="fa fa-twitter fa-5x"></i>
+                            <p>Twitter</p>
+                        </td>
+
+                        <td class="make-border-two">
+                            <i class="fa fa-google-plus-official  fa-5x"></i>
+                            <p>Google Plus</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="make-border-two">
+                            <i class="fa fa-whatsapp fa-5x"></i>
+                            <p>WhatsApp</p>
+                        </td>
+
+                        <td class="make-border-two">
+                            <i class="fa fa-github fa-5x"></i>
+                            <p>Github</p>
+                        </td>
+
+                        <td class="make-border-two">
+                            <i class="fa fa-foursquare fa-5x"></i>
+                            <p>Foursquare</p>
+                        </td>
+
+                        <td class="make-border-two">
+                            <i class="fa fa-globe fa-5x"></i>
+                            <p>The World</p>
+                        </td>
+                    </tr>
+                </table>
                 </div>
             </div>
 
