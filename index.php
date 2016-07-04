@@ -187,7 +187,7 @@
     <p style="font-size:20px;">Get the best data from the only true sources that you trust</p>
 </div>
 
-        <img src="img/imac.png" class="img-responsive">
+        <img src="img/p.jpg" class="img-responsive">
 
 
 
