@@ -84,7 +84,7 @@
 </nav>
 </header>
 
-
+<br>
 <div class="jumbotron">
 <div class="container">
 
@@ -185,19 +185,6 @@
             <center>
                 <h1 class="page-header" style="font-family: 'Open Sans Light'; font-size:40px;">Our data creates solutions for different industries</h1>
             </center>
-
-            <style>
-            .make-border-two {
-                border:1px solid #DDDDDD;
-            }
-
-                #table-x tr td {
-                    text-align:center;
-                }
-
-            </style>
-
-
 
             <div class="panel panel-default" style="border-radius:0px; border:0px solid #fff;">
             <div class="panel-body">

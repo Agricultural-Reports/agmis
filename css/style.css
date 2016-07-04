@@ -26,3 +26,10 @@
     min-height:300px;
     color:#fff;
 }
+.make-border-two {
+    border:1px solid #DDDDDD;
+}
+
+#table-x tr td {
+    text-align:center;
+}
