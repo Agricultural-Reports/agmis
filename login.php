@@ -119,7 +119,7 @@ $db->redirect('dashboard.php');
     }
 ?>
     <div class="panel panel-default sharp-corners" style="width:400px;">
-        <div class="panel-heading">
+        <div class="panel-heading" style="background:#373E46; color:#fff;border:1px solid #373E46;">
             <b><i class="fa fa-lock"></i>Login</b>
         </div>
 
@@ -138,7 +138,7 @@ $db->redirect('dashboard.php');
             </div>
 
             <div class="form-group">
-                <button type="submit" class="btn btn-success pull-right  sharp-corners" name="submit">Login</button>
+                <button type="submit" class="btn btn-success pull-right sharp-corners dark" name="submit">Login</button>
             </div>
         </div>
         </form>

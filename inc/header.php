@@ -25,6 +25,7 @@
     <!-- Custom Fonts -->
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -104,7 +105,7 @@
                     <a href="login.php">LOGIN</a>
 
                 </li>
-                
+
                 <li>
                     <button class="btn btn-default sharp-corners shadow" style="color:#fff;margin-top:10px; border:1px solid #373E46; background:#373E46;">CONTACT US</button>
                 </li>

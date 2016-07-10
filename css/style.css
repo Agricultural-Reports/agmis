@@ -48,7 +48,7 @@
 #table-x tr td {
     text-align:center;
 }
-
+.dark{background:#373E46; color:#fff; border:1px solid #373E46;}
 
 .centered {
     position: fixed;
