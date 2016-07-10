@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Welcome to AGMIS!</title>
+    <title>Welcome to AGPRICE!</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -84,7 +84,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="index.html" style="font-family:'Open Sans Semibold'; color:#fff; font-size:33px;">
-                Agmis
+                Agprice
             </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->

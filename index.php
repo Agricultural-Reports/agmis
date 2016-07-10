@@ -16,8 +16,10 @@
         <p style="color:#fff;">Get an update when a new report arrives</p>
         <p>
             <div class="input-group">
-            <input type="text" class="form-control" placeholder="Enter your Email Address" arialdescribedby="basic-addon2" style="border-radius:0px;">
-            <span class="input-group-addon" id="basic-addon2" style="border-radius:0px; cursor:pointer; font-weight:bold; background:#FFB401;">SUBSCRIBE</span>
+            <input type="text" class="col-md-5" placeholder="Enter your Email Address">
+                <input type="text" class="col-md-5" name="tel" placeholder="Enter Phone Number" style="margin-left:10px;">
+
+                <button class="btn btn-success col-md-3 sharp-corners" style="padding:0 10px;">Subscribe</button>
         </div>
         </p>
 
