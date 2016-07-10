@@ -111,22 +111,70 @@
 
 
 
-    <div class="col-md-6">
+    <div class="col-md-10">
         <div class="panel panel-default">
             <div class="panel-body tabs">
                 <ul class="nav nav-tabs">
-                    <li class="active"><a href="#tab1" data-toggle="tab">Tab 1</a></li>
-                    <li><a href="#tab2" data-toggle="tab">Tab 2</a></li>
-                    <li><a href="#tab3" data-toggle="tab">Tab 3</a></li>
+                    <li class="active"><a href="#tab1" data-toggle="tab">Manually Enter Data</a></li>
+                    <li><a href="#tab2" data-toggle="tab">Upload An Excel File (CSV)</a></li>
+                    <li><a href="#tab3" data-toggle="tab">More Options</a></li>
                 </ul>
 
                 <div class="tab-content">
                     <div class="tab-pane fade in active" id="tab1">
-                        <h4>Tab 1</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget rutrum purus. Donec hendrerit ante ac metus sagittis elementum. Mauris feugiat nisl sit amet neque luctus, a tincidunt odio auctor. </p>
+                        <h4>Manually Enter Data</h4>
+                        <p>
+
+                            <div class="form-group col-md-4">
+                        <label for="keyword">KeyWord</label>
+                            <input type="text" name="keyword" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="district">District</label>
+                            <select>
+                                
+                            </select>
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="subcountry">SubCounty</label>
+                            <input type="text" name="subcounty" class="form-control">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="county">County</label>
+                            <input type="text" name="county" class="form-control">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="market">Market Name</label>
+                            <input type="text" name="market" class="form-control">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="amount">Amount</label>
+                            <input type="text" name="amount" class="form-control">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="quantity">Quantity</label>
+                            <input type="text" name="quantity" class="form-control">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="metric">Metric</label>
+                            <input type="text" name="metric" class="form-control">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="submit">Submit Information</label>
+                            <button class="btn btn-success" style="width:100%;">SUBMIT</button>
+                        </div>
+
+                        </p>
                     </div>
                     <div class="tab-pane fade" id="tab2">
-                        <h4>Tab 2</h4>
+                        <h4>Upload CSV</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget rutrum purus. Donec hendrerit ante ac metus sagittis elementum. Mauris feugiat nisl sit amet neque luctus, a tincidunt odio auctor. </p>
                     </div>
                     <div class="tab-pane fade" id="tab3">
