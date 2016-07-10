@@ -104,17 +104,7 @@
 
 
         </div>
-
-
-
-<style>
-        .make-border{
-            border:1px solid gray;
-        }
-    .sharp-corners {
-        border-radius:0px;
-    }
-</style>
+        
 
         <div class="container" style="font-family:'Open Sans';">
 
@@ -195,14 +185,6 @@
     </div>
 </div>
     </div>
-
-
-
-
-
-
-
-
 
 
 <?php include 'inc/footer.php'; ?>

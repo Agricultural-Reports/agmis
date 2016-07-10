@@ -1,3 +1,21 @@
+<?php
+session_start();
+
+require_once 'inc/settings.php';
+
+if(isset($_POST['submit']))
+{
+    $uname = $_POST['uname'];
+    $pwd = $_POST['pwd'];
+
+    if($db->login($uname, $pwd))
+    {
+$db->redirect('dashboard.php');
+    }else{
+        $error = "Wrong Details";
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,14 +31,8 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/modern-business.css" rel="stylesheet">
-
+    
     <link href="css/style.css" rel="stylesheet">
-
-    <!--Map CSS-->
-    <link href="css/ammap.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -32,10 +44,6 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!--Map Js-->
-    <script src="js/ammap.js" type="text/javascript"></script>
-    <script src="js/ugandaLow.js" type="text/javascript"></script>
-
     <style>
         #navbar-list li a{
             font-family:"Open Sans Semibold";
@@ -45,35 +53,11 @@
             font-family:"Open Sans Semibold";
         }
     </style>
-    <script>
-        var map = AmCharts.makeChart("mapdiv", {
-            type: "map",
-
-
-
-            balloon: {
-                color: "#000000"
-            },
-
-            dataProvider: {
-                map: "ugandaLow",
-                getAreasFromMap: true
-            },
-
-            areasSettings: {
-                autoZoom: true,
-                selectedColor: "#CC0000"
-            },
-
-            smallMap: {}
-        });
-    </script>
-</head>
 
 <body>
 
 <!-- Navigation -->
-<nav class="navbar navbar-inverse navbar-fixed-top shadow" role="navigation" style="height:70px; background: #373E46; border:0px;">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="height:70px; background: #373E46; border:0px;">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -104,7 +88,7 @@
                     <a href="login.php">LOGIN</a>
 
                 </li>
-                
+
                 <li>
                     <button class="btn btn-default sharp-corners shadow" style="color:#fff;margin-top:10px; border:1px solid #373E46; background:#373E46;">CONTACT US</button>
                 </li>
@@ -116,3 +100,47 @@
     <!-- /.container -->
 </nav>
 </header>
+
+
+
+<div class="centered">
+
+
+    <h2 class="page-header text-center" style="font-family:'Open Sans';">Agprice</h2>
+    
+    <?php
+    if(isset($error))
+    {
+        ?>
+        <div class='alert alert-danger' style="border-radius: inherit; border-left:3px solid red;"><strong>Error! </strong>
+            Invalid Login Details!
+        </div>
+    <?php
+    }
+?>
+    <div class="panel panel-default sharp-corners" style="width:400px;">
+        <div class="panel-heading">
+            <b><i class="fa fa-lock"></i>Login</b>
+        </div>
+
+        <form method="post">
+
+        <div class="panel-body">
+
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" name="uname" class="form-control sharp-corners">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="pwd" class="form-control sharp-corners">
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-success pull-right  sharp-corners" name="submit">Login</button>
+            </div>
+        </div>
+        </form>
+    </div>
+</div>
