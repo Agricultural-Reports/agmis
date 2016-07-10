@@ -1,104 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Agprice - Admin</title>
+<?php include 'inc/header.php'; ?>
 
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/datepicker3.css" rel="stylesheet">
-    <link href="../css/styles.css" rel="stylesheet">
-
-    <!--Icons-->
-    <script src="../js/lumino.glyphs.js"></script>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-
-</head>
-
-<body>
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"><span style="color:#449D44;">Agprice</span> Admin</a>
-            <ul class="user-menu">
-                <li class="dropdown pull-right">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> User <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Profile</a></li>
-                        <li><a href="#"><svg class="glyph stroked gear"><use xlink:href="#stroked-gear"></use></svg> Settings</a></li>
-                        <li><a href="#"><svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> Logout</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-
-    </div><!-- /.container-fluid -->
-</nav>
-
-<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
-    <form role="search">
-        <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search">
-        </div>
-    </form>
-    <style>
-
-
-    </style>
-    <ul class="nav menu" id="nav-menu">
-        <li class="active""><a href="index.html"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Dashboard</a></li>
-        <li><a href="widgets.html"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg> Widgets</a></li>
-        <li><a href="charts.html"><svg class="glyph stroked line-graph"><use xlink:href="#stroked-line-graph"></use></svg> Charts</a></li>
-        <li><a href="tables.html"><svg class="glyph stroked table"><use xlink:href="#stroked-table"></use></svg> Tables</a></li>
-        <li><a href="forms.html"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg> Forms</a></li>
-        <li><a href="panels.html"><svg class="glyph stroked app-window"><use xlink:href="#stroked-app-window"></use></svg> Alerts &amp; Panels</a></li>
-        <li><a href="icons.html"><svg class="glyph stroked star"><use xlink:href="#stroked-star"></use></svg> Icons</a></li>
-        <li class="parent ">
-            <a href="#">
-                <span data-toggle="collapse" href="#sub-item-1"><svg class="glyph stroked chevron-down"><use xlink:href="#stroked-chevron-down"></use></svg></span> Dropdown
-            </a>
-            <ul class="children collapse" id="sub-item-1">
-                <li>
-                    <a class="" href="#">
-                        <svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Sub Item 1
-                    </a>
-                </li>
-                <li>
-                    <a class="" href="#">
-                        <svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Sub Item 2
-                    </a>
-                </li>
-                <li>
-                    <a class="" href="#">
-                        <svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Sub Item 3
-                    </a>
-                </li>
-            </ul>
-        </li>
-        <li role="presentation" class="divider"></li>
-        <li><a href="login.html"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Login Page</a></li>
-    </ul>
-
-</div><!--/.sidebar-->
 
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
     <div class="row">
         <ol class="breadcrumb">
             <li><a href="#"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
-            <li class="active">Icons</li>
+            <li class="active">Dashboard</li>
         </ol>
     </div><!--/.row-->
 
@@ -107,7 +14,6 @@
             <h1 class="page-header">Dashboard</h1>
         </div>
     </div><!--/.row-->
-
 
 
 
@@ -131,39 +37,43 @@
                         </div>
                         <div class="form-group col-md-4">
                             <label for="district">District</label>
-                            <select>
-                                
+                            <select class="form-control">
+                                <option>--Choose District--</option>
+                            <option>Kampala</option>
+                                <option>Entebbe</option>
+                                <option>Masaka</option>
+                                <option>Masindi</option>
                             </select>
                         </div>
 
                         <div class="form-group col-md-4">
                             <label for="subcountry">SubCounty</label>
-                            <input type="text" name="subcounty" class="form-control">
+                            <input type="text" name="subcounty" class="form-control" placeholder="Enter Subcounty...">
                         </div>
 
                         <div class="form-group col-md-4">
                             <label for="county">County</label>
-                            <input type="text" name="county" class="form-control">
+                            <input type="text" name="county" class="form-control" placeholder="Enter County...">
                         </div>
 
                         <div class="form-group col-md-4">
                             <label for="market">Market Name</label>
-                            <input type="text" name="market" class="form-control">
+                            <input type="text" name="market" class="form-control" placeholder="Enter Market Name...">
                         </div>
 
                         <div class="form-group col-md-4">
                             <label for="amount">Amount</label>
-                            <input type="text" name="amount" class="form-control">
+                            <input type="text" name="amount" class="form-control" placeholder="Enter Amount...">
                         </div>
 
                         <div class="form-group col-md-4">
                             <label for="quantity">Quantity</label>
-                            <input type="text" name="quantity" class="form-control">
+                            <input type="text" name="quantity" class="form-control" placeholder="Enter Quantity...">
                         </div>
 
                         <div class="form-group col-md-4">
                             <label for="metric">Metric</label>
-                            <input type="text" name="metric" class="form-control">
+                            <input type="text" name="metric" class="form-control" placeholder="Enter Metric...">
                         </div>
 
                         <div class="form-group col-md-4">
@@ -174,12 +84,28 @@
                         </p>
                     </div>
                     <div class="tab-pane fade" id="tab2">
-                        <h4>Upload CSV</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget rutrum purus. Donec hendrerit ante ac metus sagittis elementum. Mauris feugiat nisl sit amet neque luctus, a tincidunt odio auctor. </p>
+                        <h4>Upload .CSV File</h4>
+                        <p>
+                            <div class="form-group">
+                            <label for="heading">Heading/Title</label>
+                            <input type="text" name="heading" class="form-control" placeholder="Enter Heading/title">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="file">Choose A .CSV File</label>
+                            <input type="file" name="file" class="form-control">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <button class="btn btn-success" style="width:100%;">SUBMIT</button>
+                        </div>
+                        </p>
                     </div>
                     <div class="tab-pane fade" id="tab3">
-                        <h4>Tab 3</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget rutrum purus. Donec hendrerit ante ac metus sagittis elementum. Mauris feugiat nisl sit amet neque luctus, a tincidunt odio auctor. </p>
+                        <h4>More Options</h4>
+                        <p>
+                            Here we shall Provide more options of sending in the data
+                        </p>
                     </div>
                 </div>
             </div>

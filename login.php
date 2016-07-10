@@ -119,7 +119,7 @@ $db->redirect('dashboard.php');
     }
 ?>
     <div class="panel panel-default sharp-corners" style="width:400px;">
-        <div class="panel-heading" style="background:#373E46; color:#fff;border:1px solid #373E46;">
+        <div class="panel-heading sharp-corners" style="background:#373E46; color:#fff;border:1px solid #373E46;">
             <b><i class="fa fa-lock"></i>Login</b>
         </div>
 
@@ -129,12 +129,12 @@ $db->redirect('dashboard.php');
 
             <div class="form-group">
                 <label for="username">Username</label>
-                <input type="text" name="uname" class="form-control sharp-corners">
+                <input type="text" name="uname" class="form-control sharp-corners" placeholder="Enter Username">
             </div>
 
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" name="pwd" class="form-control sharp-corners">
+                <input type="password" name="pwd" class="form-control sharp-corners" placeholder="Enter Password">
             </div>
 
             <div class="form-group">
