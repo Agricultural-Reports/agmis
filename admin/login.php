@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once 'inc/settings.php';
+require_once '../inc/settings.php';
 
 if(isset($_POST['submit']))
 {
@@ -10,7 +10,7 @@ if(isset($_POST['submit']))
 
     if($db->login($uname, $pwd))
     {
-$db->redirect('dashboard.php');
+$db->redirect('index.php');
     }else{
         $error = "Wrong Details";
     }
@@ -30,9 +30,9 @@ $db->redirect('dashboard.php');
     <title>Welcome to AGPRICE!</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
     
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -67,8 +67,10 @@ $db->redirect('dashboard.php');
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php" style="font-family:'Open Sans Semibold'; color:#fff; font-size:33px;">
-                Agprice
+            <a class="navbar-brand" href="../index.php" style="font-family:'Open Sans Semibold'; color:#fff; font-size:33px;">
+
+                <img src="../img/logo.png" style="width:40%; margin-top:-20px;">
+
             </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -106,7 +108,8 @@ $db->redirect('dashboard.php');
 <div class="centered">
 
 
-    <h2 class="page-header text-center" style="font-family:'Open Sans';">Agprice</h2>
+    <img src="../img/logo.png" style="width:70%;" class="center-block">
+    <br>
     
     <?php
     if(isset($error))
@@ -142,5 +145,9 @@ $db->redirect('dashboard.php');
             </div>
         </div>
         </form>
+    </div>
+
+    <div class="center-block">
+       <center> &copy; Copyright Agprice <?php echo date('Y'); ?> </center>
     </div>
 </div>

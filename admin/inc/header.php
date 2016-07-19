@@ -1,3 +1,4 @@
+<?php include '../inc/settings.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,6 +7,7 @@
     <title>Agprice - Admin</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/roykusemererwa.css" rel="stylesheet">
     <link href="../css/datepicker3.css" rel="stylesheet">
     <link href="../css/styles.css" rel="stylesheet">
 
@@ -49,11 +51,7 @@
 </nav>
 
 <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
-    <form role="search">
-        <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search">
-        </div>
-    </form>
+<img src="../img/logo.png" style="width:100%;">
     <style>
 
 
@@ -62,26 +60,6 @@
         <li class="active""><a href="index.php"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Dashboard</a></li>
         <li><a href="dataview.php"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg> View All data</a></li>
 
-        <li class="parent ">
-            <a href="#">
-                <span data-toggle="collapse" href="#sub-item-1"><svg class="glyph stroked chevron-down"><use xlink:href="#stroked-chevron-down"></use></svg></span> Dropdown
-            </a>
-            <ul class="children collapse" id="sub-item-1">
-                <li>
-                    <a class="" href="#">
-                        <svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Sub Item 1
-                    </a>
-                </li>
-                <li>
-                    <a class="" href="#">
-                        <svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Sub Item 2
-                    </a>
-                </li>
-                <li>
-                    <a class="" href="#">
-                        <svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> Sub Item 3
-                    </a>
-                </li>
             </ul>
         </li>
         <li role="presentation" class="divider"></li>

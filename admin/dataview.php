@@ -68,7 +68,7 @@
 
     <table class="table table-striped table-bordered table-responsive">
         <tr>
-            <td>DATE</td>
+            <th>DATE</th>
             <th>KEYWORD</th>
             <th>DISTRICT</th>
             <th>SUBCOUNTY</th>
@@ -79,84 +79,15 @@
             <th>METRIC</th>
         </tr>
 
-        <tr>
-            <td>5th July 2016</td>
-            <td>RICE</td>
-            <td>ENTEBBE</td>
-            <td>NAKAWA</td>
-            <td>KYAMBOGO</td>
-            <td>NAKAWA MARKET</td>
-            <td>2000</td>
-            <td>2KG</td>
-            <td>5 TONNES</td>
-        </tr>
-        <tr>
-            <td>5th July 2016</td>
-            <td>RICE</td>
-            <td>ENTEBBE</td>
-            <td>NAKAWA</td>
-            <td>KYAMBOGO</td>
-            <td>NAKAWA MARKET</td>
-            <td>2000</td>
-            <td>2KG</td>
-            <td>5 TONNES</td>
-        </tr>
-        <tr>
-            <td>5th July 2016</td>
-            <td>RICE</td>
-            <td>ENTEBBE</td>
-            <td>NAKAWA</td>
-            <td>KYAMBOGO</td>
-            <td>NAKAWA MARKET</td>
-            <td>2000</td>
-            <td>2KG</td>
-            <td>5 TONNES</td>
-        </tr>
-        <tr>
-            <td>5th July 2016</td>
-            <td>RICE</td>
-            <td>ENTEBBE</td>
-            <td>NAKAWA</td>
-            <td>KYAMBOGO</td>
-            <td>NAKAWA MARKET</td>
-            <td>2000</td>
-            <td>2KG</td>
-            <td>5 TONNES</td>
-        </tr>
-        <tr>
-            <td>5th July 2016</td>
-            <td>RICE</td>
-            <td>ENTEBBE</td>
-            <td>NAKAWA</td>
-            <td>KYAMBOGO</td>
-            <td>NAKAWA MARKET</td>
-            <td>2000</td>
-            <td>2KG</td>
-            <td>5 TONNES</td>
-        </tr>
-        <tr>
-            <td>5th July 2016</td>
-            <td>RICE</td>
-            <td>ENTEBBE</td>
-            <td>NAKAWA</td>
-            <td>KYAMBOGO</td>
-            <td>NAKAWA MARKET</td>
-            <td>2000</td>
-            <td>2KG</td>
-            <td>5 TONNES</td>
-        </tr>
-        <tr>
-            <td>5th July 2016</td>
-            <td>RICE</td>
-            <td>ENTEBBE</td>
-            <td>NAKAWA</td>
-            <td>KYAMBOGO</td>
-            <td>NAKAWA MARKET</td>
-            <td>2000</td>
-            <td>2KG</td>
-            <td>5 TONNES</td>
-        </tr>
+
+        <?php
+        $query = "SELECT * FROM csv_tbl ORDER by id DESC";
+        $records_per_page=10;
+        $newquery = $db->paging($query, $records_per_page);
+        $db->dataview($newquery);
+        ?>
 
     </table>
 
+    <?php $db->paginglink($query, $records_per_page); ?>
 </div>

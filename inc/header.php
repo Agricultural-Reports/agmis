@@ -15,7 +15,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/modern-business.css" rel="stylesheet">
+    <link href="css/roykusemererwa.css" rel="stylesheet">
 
     <link href="css/style.css" rel="stylesheet">
 
@@ -25,7 +25,7 @@
     <!-- Custom Fonts -->
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -85,7 +85,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="index.php" style="font-family:'Open Sans Semibold'; color:#fff; font-size:33px;">
-                Agprice
+                <img src="img/logo.png" style="width:40%; margin-top:-20px;">
             </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -102,7 +102,7 @@
                     <a href="#">SUMMARIES</a>
                 </li>
                 <li>
-                    <a href="login.php">LOGIN</a>
+                    <a href="admin/login.php">LOGIN</a>
 
                 </li>
 

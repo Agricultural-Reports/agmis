@@ -1,0 +1,53 @@
+@import url('http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css');
+@import "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css";
+@import "https://fonts.googleapis.com/css?family=Open+Sans|Coda|Droid+Sans";
+.shadow {
+    border-radius:0px;
+    -webkit-box-shadow: 0 0 30px black;
+    -moz-box-shadow: 0 0 30px black;
+    box-shadow: 0 0 30px black;
+}
+.light-shadow{
+    -webkit-box-shadow: 0 0 10px lightgray;
+    -moz-box-shadow: 0 0 10px lightgray;
+    box-shadow: 0 0 10px lightgray;
+}
+.bold {
+    font-weight:10px;
+}
+h3 {
+    font-family:"Open Sans";
+}
+#navbar  ul li a {
+    color:#0B9444;
+    font-weight:bold;
+    font-size:16px;
+}
+.underline {
+    text-decoration:underline;
+}
+.sharp-corners {
+    border-radius:0px;
+}
+.border{border:1px solid lightgray;}.border-left{border-left:1px solid lightgray;}.border-right {border-right: 1px solid lightgray;}.border-bottom{border-bottom:1px solid lightgray;}.border-top{border-top:1px solid lightgray;}
+.no-borders {border:0px solid #fff;}
+.shorter
+{
+    height:22px;
+}
+.long {
+    width:100%;
+}
+.space-up
+{
+    margin-top:10px;
+}
+.dark{background:#373E46; color:#fff; border:1px solid #373E46;}
+.white-chars {color:#fff; }
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}

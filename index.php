@@ -1,6 +1,6 @@
 <?php include 'inc/header.php'; ?>
 
-<br>
+<br><br>
 <div class="jumbotron">
 <div class="container">
 
