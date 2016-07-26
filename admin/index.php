@@ -10,6 +10,7 @@
                     </svg>
                 </a></li>
             <li class="active">Dashboard</li>
+            <li class="pull-right"><i class="fa fa-calendar"></i> <?php echo date("l jS F, Y"); ?></li>
         </ol>
     </div><!--/.row-->
 
@@ -22,23 +23,55 @@
     
 
 
-    <div class="container" style="margin-left:6px; font-family:'Open Sans'; width:90%;">
+    <div class="container" style="margin-left:6px; font-family:'Open Sans'; width:95%;">
 
         Hallo admin!
+
+
+        <!--Location and Weather Finder-->
         <div id="loc">Detecting Location...</div>
         <div id="responsex"></div>
 
+        <div class="panel-group">
 
+        <div class="panel panel-default sharp-corners">
+    <div class="panel-heading">
+        <h4 class="panel-title page-header">
+            <a data-toggle="collapse" href="#collapse1"><i class="fa fa-list"></i>&nbspCurrent Weather Condition in your area<i class="caret"></i></a>
 
-        <div class="jumbotron">
+        </h4>
+    </div>
+            <div id="collapse1" class="panel-collapse collapse">
+                <div class="panel-body">
+        <div class="jumbotron sharp-corners" style="margin-top:-10px;">
             <div id="forecast">
+
                 <img src="../img/loader.gif">Loading Weather...
+
             </div>
 
+</div>
+        </div>
+</div>
+            </div>
+
+        <br>
+        <div class="panel panel-default">
+            <div class="panel-heading">AREAS WE COVER</div>
+            <div class="panel-body">
+
+                <div class="col-md-12">
+                    <!-- Embedded Google Map -->
+                   <!--<iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=1.140693,33.033259&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4084546.916877581!2d32.5848905!3d1.2847379!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1771a69f6499f945%3A0x874155ce43014549!2sUganda!5e0!3m2!1sen!2sug!4v1469539745967" width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="border:0" allowfullscreen></iframe>
+
+                </div>
+
+            </div>
 
         </div>
-        <br>
-
+            </div>
+<br>
 
         <?php
         if (isset($_POST['submit'])) {
@@ -203,5 +236,7 @@
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 
