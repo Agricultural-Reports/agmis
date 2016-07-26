@@ -44,6 +44,11 @@ $db->redirect('index.php');
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="js/user_finder.js"></script>
+
+
     <style>
         #navbar-list li a{
             font-family:"Open Sans Semibold";
@@ -54,7 +59,7 @@ $db->redirect('index.php');
         }
     </style>
 
-<body>
+<body onload="initialize()">
 
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="height:70px; background: #373E46; border:0px;">
@@ -140,6 +145,7 @@ $db->redirect('index.php');
                 <input type="password" name="pwd" class="form-control sharp-corners" placeholder="Enter Password">
             </div>
 
+
             <div class="form-group">
                 <button type="submit" class="btn btn-success pull-right sharp-corners dark" name="submit">Login</button>
             </div>
@@ -148,6 +154,10 @@ $db->redirect('index.php');
     </div>
 
     <div class="center-block">
+        
+<div id="loc"></div>
+
+
        <center> &copy; Copyright Agprice <?php echo date('Y'); ?> </center>
     </div>
 </div>

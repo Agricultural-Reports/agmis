@@ -36,6 +36,8 @@
     <!--Map Js-->
     <script src="js/ammap.js" type="text/javascript"></script>
     <script src="js/ugandaLow.js" type="text/javascript"></script>
+    
+    
 
     <style>
         #navbar-list li a{
