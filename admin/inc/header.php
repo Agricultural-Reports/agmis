@@ -6,15 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Agprice - Admin</title>
 
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
     <link href="../css/roykusemererwa.css" rel="stylesheet">
-    <link href="../css/datepicker3.css" rel="stylesheet">
+
     <link href="../css/styles.css" rel="stylesheet">
+
+    <link id="base-style" href="assets/css/style.css" rel="stylesheet">
 
     <!--Icons-->
     <script src="../js/lumino.glyphs.js"></script>
 
     <script src="js/jquery.simpleWeather.min.js"></script>
+
+
+    <!-- Metis core stylesheet -->
+    <link rel="stylesheet" href="assets/css/main.min.css">
+
+    <!-- metisMenu stylesheet -->
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/chosen/1.1.0/chosen.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery-tagsinput/1.3.3/jquery.tagsinput.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,11 +34,9 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script type="text/javascript" src="js/user_finder.js"></script>
-
 
 
 </head>

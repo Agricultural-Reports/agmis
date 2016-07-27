@@ -1,6 +1,8 @@
 <?php include 'inc/header.php'; ?>
 
 
+<br>
+
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
     <div class="row">
         <ol class="breadcrumb">
@@ -29,7 +31,7 @@
 
 
         <!--Location and Weather Finder-->
-        <div id="loc">Detecting Location...</div>
+        <div id="loc">Detecting Location...<img src="../img/loader2.gif"></div>
         <div id="responsex"></div>
 
         <div class="panel-group">
@@ -37,7 +39,7 @@
         <div class="panel panel-default sharp-corners">
     <div class="panel-heading">
         <h4 class="panel-title page-header">
-            <a data-toggle="collapse" href="#collapse1"><i class="fa fa-list"></i>&nbspCurrent Weather Condition in your area<i class="caret"></i></a>
+            <a data-toggle="collapse" href="#collapse1"><i class="fa fa-list"></i>&nbspWeather Forecast for your location<i class="caret"></i></a>
 
         </h4>
     </div>
@@ -57,7 +59,7 @@
 
         <br>
         <div class="panel panel-default">
-            <div class="panel-heading">AREAS WE COVER</div>
+            <div class="panel-heading"> <i class="fa fa-list"></i> AREAS WE COVER</div>
             <div class="panel-body">
 
                 <div class="col-md-12">
@@ -71,172 +73,137 @@
 
         </div>
             </div>
+
+
+
 <br>
 
-        <?php
-        if (isset($_POST['submit'])) {
-            $csv_file = $_FILES['csvfile'];
-
-            if ($csv_file["name"] == "") {
-                ?>
-                <div class='alert alert-danger col-md-9' style="border-radius: inherit; border-left:3px solid red;">
-                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                    <strong>Error! Missing data</strong>
-                    <p>Please click on "choose file" to upload a .csv file</p>
-                </div>
-
-                <?php
-            } else {
-                $db->upload_csv ($csv_file);
-            }
-        }
-        ?>
 
 
+        <!--Graph-->
 
-        <?php
-        //manually inserting the data
-        if (isset($_POST['manual_submit'])) {
+        <div class="panel panel-default sharp-corners" style="min-height:500px;">
 
-            $table = "csv_tbl";
-
-            $keyword = $_POST['keyword'];
-            $district = $_POST['district'];
-            $sc = $_POST['subcounty'];
-            $county = $_POST['county'];
-            $marketname = $_POST['marketname'];
-            $amt = $_POST['amount'];
-            $qty = $_POST['quantity'];
-            $metric = $_POST['metric'];
-
-            $db->enter_data ($keyword, $district, $sc, $county, $marketname, $amt, $qty, $metric);
-
-        }
-        ?>
-    </div>
+            <div class="panel-heading"><i class="fa fa-list"></i>&nbsp Trends</div>
+                <div class="panel-body">
 
 
-    <div class="col-lg-12" style="width:90%;">
-        <div class="panel panel-default">
-            <div class="panel-body tabs">
-                <ul class="nav nav-tabs">
-                    <li class="active"><a href="#tab1" data-toggle="tab"><b>Manually Enter Data</b></a></li>
-                    <li><a href="#tab2" data-toggle="tab" class="bold">Upload An Excel File (CSV)</a></li>
-                    <li><a href="#tab3" data-toggle="tab">More Options</a></li>
-                </ul>
-
-                <div class="tab-content">
-                    <div class="tab-pane fade in active" id="tab1">
-                        <h4>Manually Enter Data</h4>
-
-                        <p>
-
-
-                        <form method="post">
-
-                            <div class="form-group col-md-4">
-                                <label for="keyword">KeyWord</label>
-                                <input type="text" name="keyword" class="form-control">
-                            </div>
-                            <div class="form-group col-md-4">
-                                <label for="district">District</label>
-                                <select class="form-control" name="district">
-                                    <option>--Choose District--</option>
-                                    <option>Kampala</option>
-                                    <option>Entebbe</option>
-                                    <option>Masaka</option>
-                                    <option>Masindi</option>
+                    <table style="width:100%; font-family:'Open Sans';">
+                        <tr>
+                            <td>
+                                <b>Group by Period</b>
+                                <select style="width:80%;" data-placeholder="Group By Period" class="form-control chzn-select" tabindex="2">
+                                    <option value=""></option>
+                                    <option value="">Jan 2015 - To date</option>
+                                    <option value="">Jan 2014 - Dec 2014</option>
+                                    <option value="">Jan 2013 - Dec 2013</option>
+                                    <option value="">Jan 2012 - Dec 2012</option>
+                                    <option value="">Jan 2011 - Dec 2011</option>
+                                    <option value="">Jan 2010 -Dec 2010</option>
+                                    <option value="">Jan 2009 -Dec 2009</option>
+                                    <option value="">All Years</option>
                                 </select>
-                            </div>
+                            </td>
+                            <td>
+
+                                <b>Group By Type</b>
+                                <select style="width:100%;" data-placeholder="Group By Type" class="form-control chzn-select" tabindex="2">
+                                    <option value=""></option>
+                                    <option value="">Retail</option>
+
+                                </select>
+                            </td>
+                            <td>
+
+                                <b>Group by Category</b>
+                                <select style="width:100%;" data-placeholder="Group By Category" class="form-control chzn-select" tabindex="2">
+                                    <option value="">All Products</option>
+                                    <option value="">Fuel Products</option>
+                                    <option value="">Animal Products</option>
+                                    <option value="">Cereals</option>
+                                    <option value="">Fish</option>
+                                    <option value="">Fruit</option>
+                                    <option value="">Oil Seeds</option>
+                                    <option value="">Plantains</option>
+                                    <option value="">Poultry Products</option>
+                                    <option value="">Pulses</option>
+                                    <option value="">Root Crops</option>
+                                    <option value="">All Years</option>
+                                </select>
+                            </td>
+
+                            <td>
+                                <b>Group by Region</b>
+
+                                <select data-placeholder="Group By Region" class="form-control chzn-select" tabindex="2">
+                                    <option value="">All Regions</option>
+                                    <option value="">Central</option>
+                                    <option value="">Coast</option>
+                                    <option value="">Eastern</option>
+                                    <option value="">Nairobi</option>
+                                    <option value="">North Eastern</option>
+                                    <option value="">Coast</option>
+                                    <option value="">Northern</option>
+                                    <option value="">Rift Valley</option>
+                                    <option value="">Western</option>
+
+                                </select>
+                            </td>
+                            <td>
+                                <button class="btn btn-success text-uppercase sharp-corners">generate</button>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+<iframe src="test.html" style="width:100%; height:400px; overflow: hidden; border:0px solid #fff;" scrolling="no"></iframe>
 
 
-                            <div class="form-group col-md-4">
-                                <label for="county">County</label>
-                                <input type="text" name="county" class="form-control" placeholder="Enter County...">
-                            </div>
+        </div>
+
+        </div>
 
 
-                            <div class="form-group col-md-4">
-                                <label for="subcounty">SubCounty</label>
-                                <input type="text" name="subcounty" class="form-control"
-                                       placeholder="Enter Subcounty...">
-                            </div>
-
-
-                            <div class="form-group col-md-4">
-                                <label for="marketname">Market Name</label>
-                                <input type="text" name="marketname" class="form-control"
-                                       placeholder="Enter Market Name...">
-                            </div>
-
-                            <div class="form-group col-md-4">
-                                <label for="amount">Amount</label>
-                                <input type="text" name="amount" class="form-control" placeholder="Enter Amount...">
-                            </div>
-
-                            <div class="form-group col-md-4">
-                                <label for="quantity">Quantity</label>
-                                <input type="text" name="quantity" class="form-control" placeholder="Enter Quantity...">
-                            </div>
-
-                            <div class="form-group col-md-4">
-                                <label for="metric">Metric</label>
-                                <input type="text" name="metric" class="form-control" placeholder="Enter Metric...">
-                            </div>
-
-                            <div class="form-group col-md-4">
-                                <label for="submit">Submit Information</label>
-                                <button name="manual_submit" class="btn btn-success" style="width:100%;">SUBMIT</button>
-                            </div>
-
-                        </form>
-
-                        </p>
-                    </div>
-
-
-                    <div class="tab-pane fade" id="tab2">
-                        <h4>Upload .CSV File</h4>
-                        <p>
-                        <form method="post" enctype="multipart/form-data">
-                            <div class="form-group">
-                                <label for="heading">Heading/Title</label>
-                                <input type="text" name="heading" class="form-control"
-                                       placeholder="Enter Heading/title">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="file">Choose A .CSV File</label>
-                                <input type="file" name="csvfile" class="form-control">
-                            </div>
-
-                            <div class="form-group col-md-4">
-                                <button class="btn btn-success" style="width:100%;" name="submit">SUBMIT</button>
-                            </div>
-                        </form>
-                        </p>
-                    </div>
-
-                    <!--End of CSV Upload Form-->
-
-                    <div class="tab-pane fade" id="tab3">
-                        <h4>More Options</h4>
-                        <p>
-                            Here we shall Provide more options of sending in the data
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div><!--/.panel-->
-
-
-    </div><!--/.col-->
-
-    </div>
+        <div class="col-lg-12">
+            <center>
+           <a href="http://mysaco.com" target="_blank"><img src="../img/2.png" alt=""></a>
+            </center>
+        </div>
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!--Bootstrap -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/chosen/1.1.0/chosen.jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-tagsinput/1.3.3/jquery.tagsinput.min.js"></script>
+
+
+<!-- MetisMenu -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/metisMenu/1.1.3/metisMenu.min.js"></script>
+
+
+<script src="assets/js/jquery.inputlimiter.1.3.1.min.js"></script>
+
+
+<!-- Metis core scripts -->
+<script src="assets/js/core.min.js"></script>
+
+<!-- Metis demo scripts -->
+<script src="assets/js/app.js"></script>
+<script>
+    $(function() {
+        Metis.formGeneral();
+    });
+</script>
+
+
+</body>
+
 
 
