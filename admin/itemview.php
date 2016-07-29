@@ -14,9 +14,21 @@
 		</ol>
 	</div><!--/.row-->
 
+	<center><a href="http://mysaco.com" target="_blank"><img src="../img/2.png"></a></center>
+
 	<div class="row" style="margin-top:-20px;">
 		<div class="col-lg-12">
 			<h2 class="page-header">Commodities for buying</h2>
+
+			<table class="table table-bordered pull-right" style="background:#8CC640;">
+				<tr>
+					<th><a href="#" class="no-decoration white-chars"><i class="fa fa-list"></i> List By Region</a></th>
+					<th><a href="itemview.php" class="no-decoration"><i class="fa fa-list"></i> Average by Commodity</a></th>
+					<th><a href="#" class="no-decoration"><i class="fa fa-list"></i> List On Map</a></th>
+				</tr>
+			</table>
+
+
 		</div>
 	</div><!--/.row-->
 

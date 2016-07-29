@@ -20,7 +20,7 @@
 			<table class="table table-bordered pull-right" style="background:#8CC640;">
 				<tr>
 			<th><a href="#" class="no-decoration white-chars"><i class="fa fa-list"></i> List By Region</a></th>
-					<th><a href="#" class="no-decoration"><i class="fa fa-list"></i> Average by Commodity</a></th>
+					<th><a href="itemview.php" class="no-decoration"><i class="fa fa-list"></i> Average by Commodity</a></th>
 					<th><a href="#" class="no-decoration"><i class="fa fa-list"></i> List On Map</a></th>
 				</tr>
 				</table>
