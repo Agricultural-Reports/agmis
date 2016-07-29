@@ -30,10 +30,25 @@
 <div class="panel-heading"><i class="fa fa-list"></i> LIST OF COMMODITIES ON SALE</div>
 			<div class="panel-body">
 
-				<select style="width:80%;" data-placeholder="Group By Period" class="form-control chzn-select" tabindex="2">
+				<table style="width:50%;">
+					<tr>
+						<td>
+				<select style="width:80%;" data-placeholder="Average Prices Across All Markets" class="form-control chzn-select" tabindex="2">
 					<option value=""></option>
 					<option value="">Jan 2015 - To date</option>
 </select>
+						</td>
+
+						<td>
+							<select style="width:80%;" data-placeholder="All Categories" class="form-control chzn-select" tabindex="2">
+								<option value=""></option>
+								<option value="">Jan 2015 - To date</option>
+							</select>
+						</td>
+					</tr>
+					</table>
+
+				<br>
 					<!--Horizontal thumbnail-->
 			<div class="thumbnail right-caption span4 sharp-corners" style="width:320px;">
 				<div class="well">Tomatoes</div>
@@ -80,3 +95,31 @@
 </div>
 		</div>
 </div>
+
+
+
+	<!--Bootstrap -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/chosen/1.1.0/chosen.jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-tagsinput/1.3.3/jquery.tagsinput.min.js"></script>
+
+
+	<!-- MetisMenu -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/metisMenu/1.1.3/metisMenu.min.js"></script>
+
+
+	<script src="assets/js/jquery.inputlimiter.1.3.1.min.js"></script>
+
+
+	<!-- Metis core scripts -->
+	<script src="assets/js/core.min.js"></script>
+
+	<!-- Metis demo scripts -->
+	<script src="assets/js/app.js"></script>
+	<script>
+		$(function() {
+			Metis.formGeneral();
+		});
+	</script>
+
