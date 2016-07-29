@@ -35,9 +35,6 @@
     <![endif]-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-    <script type="text/javascript" src="js/user_finder.js"></script>
-
 
 </head>
 
@@ -67,23 +64,22 @@
     </div><!-- /.container-fluid -->
 </nav>
 
-<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar light-shadow">
 <img src="../img/logo.png" style="width:100%;">
     <style>
 
 
     </style>
     <ul class="nav menu" id="nav-menu">
-        <li class="active""><a href="index.php"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> DASHBOARD</a></li>
-        <li><a href="dataview.php"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg> ALL DATA</a></li>
-        <li><a href="dataview.php"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg> NOTIFICATIONS</a></li>
-        <li><a href="dataview.php"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg> PRICES</a></li>
-        <li><a href="dataview.php"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg> TRADING</a></li>
+        <li class="border-bottom"><a href="index.php"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> DASHBOARD</a></li>
+        <li class="border-bottom"><a href="#"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg> NOTIFICATIONS</a></li>
+        <li class="border-bottom"><a href="market-prices.php"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg> MARKET PRICES</a></li>
+        <li class="border-bottom"><a href="dataview.php"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg> TRADING</a></li>
+        <li class="border-bottom"><a href="dataview.php"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg> ALL DATA</a></li>
+        <li class="border-bottom"><a href="login.php"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg>LOGOUT</a></a></li>
 
-            </ul>
-        </li>
-        <li role="presentation" class="divider"></li>
-        <li><a href="login.php"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Logout</a></li>
+
+
     </ul>
 
 </div><!--/.sidebar-->

@@ -52,3 +52,32 @@ h3 {
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
 }
+
+.bold-blue {
+ font-weight:bold;
+    color:#30A5FF;
+}
+
+
+.margin{
+    margin:10%;
+}
+
+.no-decoration{
+    color:#000;
+    text-decoration:none;
+}
+
+.thumbnail.right-caption > img {
+    float: left;
+    margin-right: 9px;
+}
+
+.thumbnail.right-caption {
+    float: left;
+}
+
+.thumbnail.right-caption > .caption {
+    padding: 4px;
+}
+​

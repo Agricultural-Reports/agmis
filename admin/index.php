@@ -1,7 +1,8 @@
 <?php include 'inc/header.php'; ?>
 
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="js/user_finder.js"></script>
 
-<br>
 
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
     <div class="row">
@@ -156,7 +157,7 @@
                     </table>
 
                     <br>
-<iframe src="test.html" style="width:100%; height:400px; overflow: hidden; border:0px solid #fff;" scrolling="no"></iframe>
+<iframe src="chart.php" style="width:100%; height:400px; overflow: hidden; border:0px solid #fff;" scrolling="no"></iframe>
 
 
         </div>
