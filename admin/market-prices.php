@@ -138,3 +138,5 @@
 			});
 		});
 	</script>
+
+    <?php include 'inc/footer.php'; ?>

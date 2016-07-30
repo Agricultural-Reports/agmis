@@ -35,6 +35,7 @@
     <![endif]-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
 
 </head>
 
@@ -72,11 +73,37 @@
     </style>
     <ul class="nav menu" id="nav-menu">
         <li class="border-bottom"><a href="index.php"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> DASHBOARD</a></li>
-        <li class="border-bottom"><a href="#"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg> NOTIFICATIONS</a></li>
-        <li class="border-bottom"><a href="market-prices.php"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg> MARKET PRICES</a></li>
-        <li class="border-bottom"><a href="dataview.php"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg> TRADING</a></li>
-        <li class="border-bottom"><a href="dataview.php"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg> ALL DATA</a></li>
-        <li class="border-bottom"><a href="login.php"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg>LOGOUT</a></a></li>
+        <li class="border-bottom"><a href="#"><svg class="glyph stroked two messages"><use xlink:href="#stroked-two-messages"></use></svg> NOTIFICATIONS</a></li>
+        <li class="border-bottom"><a href="market-prices.php"><i class="fa fa-money"></i> MARKET PRICES</a></li>
+        <li class="parent border-bottom">
+            <a href="#">
+        <span data-toggle="collapse" href="#sub-item-1"><svg class="glyph stroked chevron-down"><use xlink:href="#stroked-chevron-down"></use></svg><span> TRADING
+            </a>
+
+            <ul class="children collapse" id="sub-item-1">
+                <li>
+                    <a class="" href=latest-deals.php>
+                        <svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> LATEST DEALS
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="#">
+                        <svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> POST A DEAL
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="#">
+                        <svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> MY STORE
+                    </a>
+                </li>
+            </ul>
+
+        </li>
+
+        <li><a href="dataview.php"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg> ALL DATA</a></li>
+
+        <li class="divider" role="presentation"></li>
+        <li><a href="login.php"><svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg>LOGOUT</a></a></li>
 
 
 

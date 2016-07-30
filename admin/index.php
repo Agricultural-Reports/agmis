@@ -1,5 +1,6 @@
 <?php include 'inc/header.php'; ?>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript" src="js/user_finder.js"></script>
 
