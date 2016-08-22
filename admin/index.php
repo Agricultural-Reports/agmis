@@ -1,20 +1,15 @@
 <?php include 'inc/header.php'; ?>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-<script type="text/javascript" src="js/user_finder.js"></script>
-
-
 <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
     <div class="row">
-        <ol class="breadcrumb">
+        <ol class="breadcrumb" style="margin-top:2px; width:103%;">
             <li><a href="#">
                     <svg class="glyph stroked home">
                         <use xlink:href="#stroked-home"></use>
                     </svg>
                 </a></li>
             <li class="active">Dashboard</li>
-            <li class="pull-right"><i class="fa fa-calendar"></i> <?php echo date("l jS F, Y"); ?></li>
+            <li class="pull-right" style="margin-left:-20px;"><i class="fa fa-calendar"></i> <?php echo date("l jS F, Y"); ?></li>
         </ol>
     </div><!--/.row-->
 
@@ -31,9 +26,17 @@
 
         Hallo admin!
 
+<br>
+        Your Location:
+        <?php
+        $geoplugin->locate();
+        echo "{$geoplugin->city}, {$geoplugin->countryName}";
 
+        ?>
+
+        
         <!--Location and Weather Finder-->
-        <div id="loc">Detecting Location...<img src="../img/loader2.gif"></div>
+       <!-- <div id="loc">Detecting Location...<img src="../img/loader2.gif"></div>-->
         <div id="responsex"></div>
 
         <div class="panel-group">

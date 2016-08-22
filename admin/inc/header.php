@@ -1,4 +1,11 @@
-<?php include '../inc/settings.php'; ?>
+<?php
+include '../inc/settings.php';
+
+require_once('inc/geoplugin.class.php');
+
+$geoplugin = new geoPlugin();
+$geoplugin->locate();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,10 +20,17 @@
 
     <link id="base-style" href="assets/css/style.css" rel="stylesheet">
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
     <!--Icons-->
     <script src="../js/lumino.glyphs.js"></script>
 
     <script src="js/jquery.simpleWeather.min.js"></script>
+
+
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="js/user_finder.js"></script>
 
 
     <!-- Metis core stylesheet -->
@@ -33,13 +47,11 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     
 
 </head>
 
-<body onload="initialize()">
+<body onload="getWeather(<?php echo "{$geoplugin->city}"; ?>)">
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -49,7 +61,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><span style="color:#449D44;">Agprice</span> Admin</a>
+            <a class="navbar-brand" href="#"><span style="color:#449D44;">Agprice</span> Admin in <?php echo "{$geoplugin->city}"; ?></a>
             <ul class="user-menu">
                 <li class="dropdown pull-right">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> User <span class="caret"></span></a>
@@ -87,7 +99,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="" href="#">
+                    <a class="" href="add.php">
                         <svg class="glyph stroked chevron-right"><use xlink:href="#stroked-chevron-right"></use></svg> POST A DEAL
                     </a>
                 </li>
